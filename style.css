@@ -44,7 +44,7 @@ h2{
 header{
     display: flex;
     height: 100vh;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1)), url("img/web\ desktop.png");
+    background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1)), url("img/floresdesktop.png");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
