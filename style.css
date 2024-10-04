@@ -1,0 +1,347 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+}
+
+
+h4{
+    font-family: "Cormorant Garamond";
+    font-size: 30px;
+    color: #898989;
+}
+h3{
+    font-family: "Cormorant Garamond";
+    font-size: 35px;
+}
+
+h2, #texto_principal {
+    opacity: 0; /* Comienza invisible */
+    transform: translateY(-5px); /* Desplazado hacia arriba */
+    transition: opacity 3.5s, transform 3.5s; 
+}
+h2.animate, #texto_principal.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+h2{
+    font-family: "Playball", cursive;
+    font-family: "Great Vibes", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 70px;
+    color: #f67e7d;
+    padding: 3%;
+    text-shadow: 1px 1px 1px rgb(179, 179, 179) !important;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+
+header{
+    display: flex;
+    height: 100vh;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1)), url("/img/web\ desktop.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+}
+header img{
+    align-self: center;
+    justify-self: center;
+    width: 70%;
+}
+
+.swiper {
+    height: 500px;
+    width: 70%;
+    margin: 0 auto;
+}
+.swiper-slide {
+    background-color: #fff;
+}
+.swiper-slide img {
+    display: block;
+    height: 100%;
+    margin: 0 auto;
+    object-fit: cover;
+}
+:root {
+    --swiper-theme-color: #f67e7d !important;
+}
+.centered{
+    text-align: center;
+}
+.separador{
+    width: 30%;
+    margin: 0 auto;
+    border: 1px solid #f67e7d;
+    
+}
+
+#historia {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+#imagenHistoria{
+    width: 30%;
+}
+#textoHistoria{
+    width: 45%;
+}
+#imagenHistoria img{
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+}
+
+#nosotros{
+    margin: 0 auto;
+    margin-bottom: 3%;
+    margin-top: 3%;
+}
+#nosotros p{
+    width:90%;
+    text-align: justify;
+    margin: 0 auto;
+}
+
+#contador-container{
+    background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.3)), url('img/argollas\ contador.jpg');
+    background-size: cover;
+    background-position: center;    
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+#contador-container h2{
+    text-shadow: 1px 1px 1px rgb(49, 49, 49) !important;
+}
+#contador{
+    display: flex;
+    margin: 0 auto;
+    height:min-content;
+    justify-content: center;
+}
+#contador div{
+    padding-left: 3%;
+    padding-right: 3%;
+}
+#contador div span{
+    font-size: 70px;
+}
+#contador div h3{
+    font-size: 25px;
+    text-align: center;
+    color: #000;
+}
+
+#contador div:not(:first-child)::after {
+    content: ":";
+    position: relative;
+    right: 50px;
+    top: -60%;
+    transform: translateY(-50%);
+    font-size: 4rem;
+    color: #f67e7d;
+    text-shadow: 1px 1px 1px rgb(49, 49, 49) !important;
+}
+
+#carrusel{
+    top: -40px;
+}
+#sellamiento, #mesa{
+    background-color: #f6f6f6;
+    padding: 3%;
+}
+#sellamiento{
+    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.4)), url('img/fondo\ flores.avif');
+}
+#sellamiento .imagen img {
+    width: 700px;
+    max-width: 1200px; /* Limita el tamaño de la imagen */
+    height: auto;
+}
+
+.contenido {
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+}
+.ubicacion {
+    font-size: 14px;
+}
+.texto-tarjeta{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url('img/argollas.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 550px;
+    width: 800px;
+    color: #fff;
+    display: grid;
+    grid-template-columns: 1fr;
+    box-shadow: -6px 6px 8px 3px rgba(0, 0, 0, 0.6);
+    z-index: 5;
+}
+.texto-tarjeta iframe{
+    width: 90%;
+    height: 300px;
+}
+
+.texto-tarjeta h4, .texto-tarjeta p{
+    color: #fff;
+    text-shadow: 1px 1px 1px black;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.texto-tarjeta  h4{
+    text-align: center;
+    align-self: center;
+    height: min-content;
+}
+.texto-tarjeta  p{
+    text-align: center;
+    align-self: self-start;
+}
+.texto-tarjeta  iframe{
+    margin: 0 auto;
+}
+#fiesta{
+    padding: 3%;
+}
+#fiesta .texto-tarjeta{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url('img/mesaboda.jpg');
+    box-shadow: 6px 6px 8px 3px rgba(0, 0, 0, 0.6);
+}
+
+#fiesta .imagen img {
+    width: 700px;
+    height: 450px;
+    z-index: 0;
+}
+
+#vestimenta{
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+}
+#mesa{
+    background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.7)), url('img/mesaregalos.JPG');
+    background-size: cover;
+    background-position: center;
+}
+
+#mesa a img{
+    width: 60px;
+    padding: 15px;
+}
+#mesa a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f67e7d;
+    
+}
+#mesa p{
+    text-align: justify;
+    margin: 0 auto;
+    width: 60%;
+}
+
+#confirmacion iframe{
+    display: block;
+    margin: 0 auto;
+    box-shadow: 5px 6px 12px 2px rgba(0, 0, 0, 0.6);
+    margin-bottom: 50px;
+    border-radius: 15px;
+    width: 40%;
+    height: 1010px;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+
+@media (max-width: 600px) {
+    header {
+        overflow-x: hidden !important;
+        display: flex;
+        background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1)), url("/img/web\ desktop.png");
+        background-attachment: fixed;
+        background-position: -180px 220px;
+    }
+    
+    h2{
+        font-size: 60px;
+    }
+    header img{
+        width: 180%;
+    }
+    #historia{
+        display: block;
+    }
+    #imagenHistoria{
+        width: 100%;
+    }
+    #textoHistoria{
+        width: 80%;
+        margin: 0 auto;
+        padding-top: 30px;
+    }
+    #sellamiento, #fiesta{
+        width: 93%;
+        padding: none;
+    }
+    #sellamiento .imagen img,
+    #fiesta .imagen img {
+        display: none !important;
+    }
+    #contador div{
+        padding: 10px !important;
+    }
+    #contador div:not(:first-child)::after {
+        right: 20px;
+    }
+    #contador div span{
+        font-size: 60px;
+    }
+    
+    #carrusel{
+        margin-top: 50px;
+    }
+    .swiper {
+        height: 500px;
+        width: 95%;
+        margin: 0 auto;
+    }
+    .swiper-slide img {
+        display: block;
+        margin: 0 auto;
+    }
+    #vestimenta{
+        width: 95%;
+    }
+    .texto-tarjeta{
+        width: 100%;
+    }
+    .texto-tarjeta iframe{
+        width: 90%;
+        height: 280px;
+    }
+    #confirmacion iframe{
+        width: 85%;
+        height: 1180px;
+    }
+    footer{
+        padding: 0px !important;
+    }
+}
