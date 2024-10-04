@@ -310,7 +310,7 @@ footer{
     }
     #contador div:not(:first-child)::after {
         right: 20px;
-        top:-60%!important;
+        top:-108px !important;
     }
     #contador div span{
         font-size: 60px;
